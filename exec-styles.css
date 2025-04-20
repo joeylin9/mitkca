@@ -1,0 +1,76 @@
+/* Executive Team Page Styles */
+
+/* Executive Team Section */
+.exec-team {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.exec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.exec-card {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.exec-card:hover {
+    transform: translateY(-10px);
+}
+
+.exec-photo {
+    height: 250px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.exec-details {
+    padding: 20px;
+}
+
+.exec-details h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.exec-details .position {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.exec-details p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Get Involved Section */
+.get-involved {
+    padding: 50px 0;
+}
+
+.join-info {
+    text-align: center;
+    max-width: 700px;
+    margin: -30px auto 20px;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .exec-grid {
+        grid-template-columns: 1fr;
+    }
+}
